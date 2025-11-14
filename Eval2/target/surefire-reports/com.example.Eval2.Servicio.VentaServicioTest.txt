@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: com.example.Eval2.Servicio.VentaServicioTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.048 s <<< FAILURE! -- in com.example.Eval2.Servicio.VentaServicioTest
+com.example.Eval2.Servicio.VentaServicioTest.testConfirmarVenta_StockInsuficiente_LanzaExcepcion -- Time elapsed: 0.028 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <com.example.Eval2.Exception.StockInsuficienteException> but was: <java.lang.NullPointerException>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3128)
+	at com.example.Eval2.Servicio.VentaServicioTest.testConfirmarVenta_StockInsuficiente_LanzaExcepcion(VentaServicioTest.java:50)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "com.example.Eval2.Entidad.Mueble.getStock()" is null
+	at com.example.Eval2.Servicio.VentaServicio.confirmarVenta(VentaServicio.java:34)
+	at com.example.Eval2.Servicio.VentaServicioTest.lambda$testConfirmarVenta_StockInsuficiente_LanzaExcepcion$0(VentaServicioTest.java:51)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	... 6 more
+
